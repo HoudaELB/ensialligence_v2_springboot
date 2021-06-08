@@ -13,7 +13,7 @@ public interface CommentaireDAO extends JpaRepository<Commentaire,Integer> {
     List<Commentaire> findAll();
 	
 	@Query("select c from Commentaire c where c.idCommentaire = ?1")
-	Commentaire findCommentaire(int idCommentaire);
+	Commentaire findCommentaireByIdCom(int idCommentaire);
 
     @Query("select c from Commentaire c where c.idUser like %?1%")
     Commentaire findCommentaireByIdUser(int idUser);
