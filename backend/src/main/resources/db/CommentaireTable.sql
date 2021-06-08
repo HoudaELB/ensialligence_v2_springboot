@@ -1,8 +1,8 @@
-CREATE TABLE IF NOT EXISTS `commentaire` (
-  `idcom` int NOT NULL AUTO_INCREMENT,
-  `id` int DEFAULT NULL,
-  `idarticle` int DEFAULT NULL,
-  `the_comment` varchar(300) DEFAULT NULL,
+CREATE TABLE IF NOT EXISTS `Commentaire` (
+  `idCom` int NOT NULL AUTO_INCREMENT,
+  `idUser` int DEFAULT NULL,
+  `idArticle` int DEFAULT NULL,
+  `comment` varchar(300) DEFAULT NULL,
   `nbjaimecom` int DEFAULT NULL,
   PRIMARY KEY (`idcom`),
   KEY `FK_COM1` (`id`),

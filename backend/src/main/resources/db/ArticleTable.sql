@@ -1,13 +1,12 @@
-CREATE TABLE IF NOT EXISTS `article` (
-  `idarticle` int NOT NULL AUTO_INCREMENT,
-  `id` int DEFAULT NULL,
-  `titre` varchar(300) DEFAULT NULL,
-  `categorie` varchar(300) DEFAULT NULL,
-  `image` longblob,
-  `video` longblob,
-  `nbjaimeart` int DEFAULT NULL,
-  PRIMARY KEY (`idarticle`),
-  KEY `article_i1` (`id`),
-  CONSTRAINT `FK_ART` FOREIGN KEY (`id`) REFERENCES `utilisateur` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+drop table article;
+CREATE TABLE IF NOT EXISTS article (
+               id_article int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+               id_user int DEFAULT NULL,
+               titre varchar(300) DEFAULT NULL,
+               categorie varchar(300) DEFAULT NULL,
+               image longblob,
+               nbjaimeart int DEFAULT NULL,
+               CONSTRAINT FK_ART foreign key (id_user) references utilisateur(id_user)
+);
+INSERT INTO article VALUES (1,1,'first_article_tite','first_article_categorie',null,12);
+select * from article;
