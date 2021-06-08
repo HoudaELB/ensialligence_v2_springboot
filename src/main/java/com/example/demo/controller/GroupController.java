@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping
@@ -47,7 +46,7 @@ public class GroupController {
         return groupService.update(idGroup,group);
     }
 
-    @DeleteMapping("/deleteAll")
+    @DeleteMapping("/deleteAllGroupes")
     public String deleteAll(){
         return groupService.deleteAllGroup();
     }
