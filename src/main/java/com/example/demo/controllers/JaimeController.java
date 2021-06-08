@@ -1,6 +1,6 @@
-package com.example.demo.controller;
+package com.example.demo.controllers;
 
-import com.example.demo.dao.JaimeDAO;
+import com.example.demo.DAOs.JaimeDAO;
 import com.example.demo.models.Article;
 import com.example.demo.models.Jaime;
 import com.example.demo.services.JaimeService;

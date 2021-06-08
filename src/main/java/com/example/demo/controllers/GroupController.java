@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controllers;
 
 import com.example.demo.models.Group;
 import com.example.demo.services.GroupService;

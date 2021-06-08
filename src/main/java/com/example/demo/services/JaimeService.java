@@ -1,6 +1,6 @@
 package com.example.demo.services;
 
-import com.example.demo.dao.JaimeDAO;
+import com.example.demo.DAOs.JaimeDAO;
 import com.example.demo.models.Jaime;
 
 import org.springframework.beans.factory.annotation.Autowired;

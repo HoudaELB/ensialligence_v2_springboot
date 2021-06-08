@@ -1,4 +1,4 @@
-package com.example.demo.controllerFront;
+package com.example.demo.controllersFront;
 
 
 import com.example.demo.models.Group;

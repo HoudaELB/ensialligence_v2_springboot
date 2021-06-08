@@ -1,11 +1,12 @@
 package com.example.demo;
 
-import com.example.demo.dao.ArticleDAO;
-import com.example.demo.dao.GroupDAO;
-import com.example.demo.dao.ParticipantDAO;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import com.example.demo.DAOs.ArticleDAO;
+import com.example.demo.DAOs.GroupDAO;
+import com.example.demo.DAOs.ParticipantDAO;
 
 @SpringBootApplication
 @EnableJpaRepositories(basePackageClasses = {GroupDAO.class,ParticipantDAO.class, ArticleDAO.class})
