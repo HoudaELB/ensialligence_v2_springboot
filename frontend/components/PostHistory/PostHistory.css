@@ -1,0 +1,45 @@
+.postHistoryContainer{
+    background-image: linear-gradient(-20deg, #a089b5, rgb(137, 123, 226));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 53vh;
+    border-radius: 70px;
+    box-shadow: #0000007a 1px 12px 12px 0px;
+    margin-bottom: 2rem;
+}
+
+.postHistoryTitle{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top:3rem;
+}
+
+.postHistoryItem{
+    margin: 1.5rem 2.5rem 2.5rem 3.5rem;
+    color: #514B4B;;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.postHistoryItem:hover{
+    color: rgb(255, 255, 255);
+}
+
+.postHistoryItem:active{
+    color: rgb(49, 47, 47);
+}
+
+.postHistoryFaFile{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.postHistoryName{
+    font-weight: bolder;
+}

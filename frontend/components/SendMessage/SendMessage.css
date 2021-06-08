@@ -1,0 +1,55 @@
+.sendMessageContainer{
+    /* background-image: linear-gradient(-20deg, #a089b5, rgb(137, 123, 226)); */
+    background-color: #8e44ad;
+    width: 40rem;
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+    box-shadow: #0000007a 0px 6px 16px 0px;
+}
+
+.sendMessageFields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+}
+
+.sendMessageInput{
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 30rem;
+    padding: 1rem;
+}
+
+.sendMessageSubmit{
+    background-color: #8e44ad;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.sendMessageSubmit:hover{
+    background-color: #ae54d4;
+}
+
+.sendMessageSubmit:active{
+    background-color: white;
+}
+
+.sendMessageCaret{
+    color: white;
+    font-size: 2.7rem;
+    margin: 0.4rem 0 0.4rem 0.4rem;
+}
+

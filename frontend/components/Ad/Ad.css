@@ -1,0 +1,34 @@
+.adContainer{
+    /* background-color: white; */
+    color: rgb(36, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 27vh;
+    border-radius: 70px;
+    /* box-shadow: #0000007a 1px 12px 12px 0px; */
+    margin-bottom: 2rem;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: .7;
+}
+
+.adContainer:hover{
+    color: rgb(159, 245, 202);
+}
+
+.adContainer:active{
+    color: rgb(36, 33, 33);
+}
+
+.adIcon{
+    font-size: 10rem;
+}
+
+.adContainer>p{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
