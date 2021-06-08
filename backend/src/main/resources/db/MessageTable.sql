@@ -8,6 +8,6 @@ CREATE TABLE IF NOT EXISTS `message` (
   PRIMARY KEY (`idmsg`),
   KEY `message_i1` (`receiver`),
   KEY `message_i2` (`sender`),
-  CONSTRAINT `FK_REC` FOREIGN KEY (`receiver`) REFERENCES `utilisateur` (`id`),
-  CONSTRAINT `FK_SND` FOREIGN KEY (`sender`) REFERENCES `utilisateur` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  CONSTRAINT `FK_REC` FOREIGN KEY (`receiver`) REFERENCES `utilisateur` (`id_user`),
+  CONSTRAINT `FK_SND` FOREIGN KEY (`sender`) REFERENCES `utilisateur` (`id_user`)
+);
