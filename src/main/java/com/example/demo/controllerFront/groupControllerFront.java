@@ -1,7 +1,7 @@
 package com.example.demo.controllerFront;
 
 
-import com.example.demo.model.Group;
+import com.example.demo.models.Group;
 import com.example.demo.services.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

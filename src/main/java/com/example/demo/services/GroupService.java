@@ -1,7 +1,8 @@
 package com.example.demo.services;
 
 import com.example.demo.dao.GroupDAO;
-import com.example.demo.model.Group;
+import com.example.demo.models.Group;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

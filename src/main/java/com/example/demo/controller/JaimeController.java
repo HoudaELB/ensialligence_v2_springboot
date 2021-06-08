@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.dao.JaimeDAO;
-import com.example.demo.model.Article;
-import com.example.demo.model.Jaime;
+import com.example.demo.models.Article;
+import com.example.demo.models.Jaime;
 import com.example.demo.services.JaimeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
