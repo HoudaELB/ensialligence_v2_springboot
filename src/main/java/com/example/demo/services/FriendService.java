@@ -18,7 +18,7 @@ public class FriendService {
         return friendDAO.save(friend);
     }
 
-    public List<Friend> getAFriends(){
+    public List<Friend> getFriends(){
         return friendDAO.findAll();
     }
 
@@ -30,7 +30,7 @@ public class FriendService {
         return friendDAO.findFriendByIdUser1(idUser1);
     }
 
-    public Friend getFriendByCategorie(int idUser2){
+    public Friend getFriendByIdUser2(int idUser2){
         return friendDAO.findFriendByIdUser2(idUser2);
     }
     
