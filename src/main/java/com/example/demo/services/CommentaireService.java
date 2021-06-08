@@ -26,7 +26,7 @@ public class CommentaireService {
         return comDAO.findCommentaireByIdCom(id);
     }
 
-    public Commentaire getfindCommentaireByIdUser(int idUser){
+    public Commentaire getCommentaireByIdUser(int idUser){
         return comDAO.findCommentaireByIdUser(idUser);
     }
 
@@ -38,7 +38,7 @@ public class CommentaireService {
          return comDAO.save(com);
     }
 
-    public String deleteArticleById(int id){
+    public String deleteCommentaireById(int id){
     	comDAO.deleteById(id);
         return "Commentaire "+id+" is deleted successfully";
     }
