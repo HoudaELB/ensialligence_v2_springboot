@@ -1,17 +1,16 @@
 package com.example.demo.services;
 
-import java.util.List;
 
+import com.example.demo.dao.MessageDAO;
+import com.example.demo.model.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.DAOs.MessageDAO;
-import com.example.demo.models.Message;
+import java.util.List;
 
 @Service
 public class MessageService {
-	
-	@Autowired
+    @Autowired
     MessageDAO messageDAO;
 
     public Message addMessage(Message msg){
@@ -23,30 +22,28 @@ public class MessageService {
     }
 
     public Message getMessageById(int id){
-        return messageDAO.findMessageByIdMessage(id);
+        return messageDAO.findMessageById_msg(id);
     }
 
     public Message getMessageByIdSender(int idSender){
-        return messageDAO.findMessageByIdSender(idSender);
+        return messageDAO.findMessageBySender(idSender);
     }
 
     public Message getMessageByIdReceiver(int idReceiver){
-        return messageDAO.findMessageByIdReceiver(idReceiver);
+        return messageDAO.findMessageBySender(idReceiver);
     }
-    
+
     public Message update(Message msg){
-         return messageDAO.save(msg);
+        return messageDAO.save(msg);
     }
 
     public String deleteMessageById(int id){
-    	messageDAO.deleteById(id);
+        messageDAO.deleteById(id);
         return "Message "+id+" is deleted successfully";
     }
-    
+
     public String deleteAllMessages(){
-    	messageDAO.deleteAll();
+        messageDAO.deleteAll();
         return "All Messages are deleted successfully";
     }
-
-
 }
