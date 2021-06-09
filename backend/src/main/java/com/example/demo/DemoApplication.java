@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackageClasses = {GroupDAO.class,ParticipantDAO.class, ArticleDAO.class,
+@EnableJpaRepositories(basePackageClasses = {ArticleDAO.class,
         CommentaireDAO.class, FriendDAO.class,ArticleDAO.class})
 public class DemoApplication {
 
