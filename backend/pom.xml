@@ -73,9 +73,14 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+<dependency>
+  <groupId>junit</groupId>     <!-- NOT org.junit here -->
+  <artifactId>junit-dep</artifactId>
+  <version>4.8.2</version>
+  <scope>test</scope>
+</dependency>
         
-		
-	
 		
 		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
 <dependency>
