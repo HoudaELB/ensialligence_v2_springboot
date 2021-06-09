@@ -8,13 +8,13 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_msg;
-    private int msg;
+    private String msg;
     private String date_envoi;
     private Boolean is_read;
     private int sender;
     private int receiver;
 
-    public Message(int id_msg, int msg, String date_envoi, Boolean is_read, int sender, int receiver) {
+    public Message(int id_msg, String msg, String date_envoi, Boolean is_read, int sender, int receiver) {
         this.id_msg = id_msg;
         this.msg = msg;
         this.date_envoi = date_envoi;
@@ -34,11 +34,11 @@ public class Message {
         this.id_msg = id_msg;
     }
 
-    public int getMsg() {
+    public String getMsg() {
         return msg;
     }
 
-    public void setMsg(int msg) {
+    public void setMsg(String msg) {
         this.msg = msg;
     }
 

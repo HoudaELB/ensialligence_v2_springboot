@@ -8,10 +8,10 @@ public class Jaime {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id_jaime;
-    private String id_user;
-    private String id_article;
+    private int id_user;
+    private int id_article;
 
-    public Jaime(int id_jaime, String id_user, String id_article) {
+    public Jaime(int id_jaime, int id_user, int id_article) {
         this.id_jaime = id_jaime;
         this.id_user = id_user;
         this.id_article = id_article;
@@ -28,19 +28,19 @@ public class Jaime {
         this.id_jaime = id_jaime;
     }
 
-    public String getId_user() {
+    public int getId_user() {
         return id_user;
     }
 
-    public void setId_user(String id_user) {
+    public void setId_user(int id_user) {
         this.id_user = id_user;
     }
 
-    public String getId_article() {
+    public int getId_article() {
         return id_article;
     }
 
-    public void setId_article(String id_article) {
+    public void setId_article(int id_article) {
         this.id_article = id_article;
     }
 }
